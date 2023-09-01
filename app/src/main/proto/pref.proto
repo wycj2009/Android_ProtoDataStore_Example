@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.example.test;
+
+option java_multiple_files = true;
+
+message Pref {
+
+  ClickCount clickCount = 1;
+
+  message ClickCount {
+    uint64 button_1 = 1;
+    uint64 button_2 = 2;
+    uint64 button_3 = 3;
+  }
+}
